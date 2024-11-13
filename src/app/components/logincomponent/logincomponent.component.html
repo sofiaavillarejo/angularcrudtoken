@@ -1,0 +1,15 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 ">
+      <div class="heading">Iniciar Sesión</div>
+      <form class="form" #loginForm="ngForm">
+        <input  name="cajanombre" #cajanombre class="form-control input" type="text" id="email" placeholder="Usuario">
+        <input  name="cajacont" #cajacont required="" class="input"  type="text" id="password" placeholder="Contraseña">
+        <span class="forgot-password"><a href="#">¿Has olvidado tu contraseña?</a></span>
+        <input class="login-button" type="submit" value="Entrar" (click)="login()">
+      </form>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>
